@@ -1,12 +1,11 @@
 return {
-  'romgrk/barbar.nvim',
+  "romgrk/barbar.nvim",
   dependencies = {
-    'lewis6991/gitsigns.nvim',
-    'nvim-tree/nvim-web-devicons',
+    "lewis6991/gitsigns.nvim",
+    "nvim-tree/nvim-web-devicons",
   },
   config = function()
     local opts = { noremap = true, silent = true }
-    vim.keymap.set('n', '<Tab>', '<Cmd>BufferNext<CR>', opts)
-    vim.keymap.set('n', '<Tab>', '<Cmd>BufferPrevious<CR>', opts)
-  end
+    vim.keymap.set("n", "<Tab>", "<Cmd>BufferNext<CR>", opts)
+  end,
 }
